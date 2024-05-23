@@ -79,6 +79,7 @@ Where available, the computed thermodynamic properties are compared with the the
 ### <span style="color: #4CAF50;">5. Mixture properties H<sub>2</sub>-CO<sub>2</sub> 
 - **Properties**: 
     - $\large \rho(p,T,\mathrm{mf}_\mathrm{H_2})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures computed from MD simulations (Ref. [6]).
+    - $\large \Gamma(p,T,\mathrm{mf}_\mathrm{H_2})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures computed from MD simulations (Ref. [6]).
 - **Range of data**: 
     - $\large p \in [5, 50]$ MPa
     - $\large T \in [323.15, 423.15]$ K
