@@ -104,10 +104,10 @@ Where available, the computed thermodynamic properties are compared with the the
 
 ### <span style="color: #4CAF50;">6. VLE H<sub>2</sub>-CO<sub>2</sub>-Brine
 - **Properties**: 
-    - $\large x_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in liquid phase computed from CFCMC simulations (Ref. [8])
+    - $\normalsize x_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in liquid phase computed from CFCMC simulations (Ref. [8])
     - $\large x_\mathrm{CO_{2}}(p,T,c_\mathrm{NaCl})$ in liquid phase computed from CFCMC simulations (Ref. [8])
-    - $\large x_\mathrm{H_{2}O}(p,T,c_\mathrm{NaCl})$ in liquid phase computed from CFCMC simulations (Ref. [8])
-    - $\large y_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
+    - $\Large x_\mathrm{H_{2}O}(p,T,c_\mathrm{NaCl})$ in liquid phase computed from CFCMC simulations (Ref. [8])
+    - $\small y_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
     - $\large y_\mathrm{CO_{2}}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
     - $\large y_\mathrm{H_{2}O}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
     - $\large \phi_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
