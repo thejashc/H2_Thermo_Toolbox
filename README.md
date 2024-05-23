@@ -14,11 +14,11 @@ Where available, the computed thermodynamic properties are compared with the the
 
 ## Sheet Descriptions
 
-### <span style="color: #4CAF50;">1. IFT H(<sub>2)-Brine</span>
-- **Properties**: Interfacial Tensions (IFTs) of H2-NaCl Brine systems computed from MD simulations performed in _NVT_ ensemble, 
+### <span style="color: #4CAF50;">1. IFT H<sub>2</sub>-Brine</span>
+- **Properties**: Interfacial Tensions (IFTs) of H<sub>2</sub>-NaCl Brine systems computed from MD simulations performed in _NVT_ ensemble, 
                 as a function of pressure, temperature, and concentration of NaCl (Ref. [6]).
 - **Range of data**: 
-    - Pressure between 0.1 and 60 MPa
+    - $p \in [0.1, 60]$ MPa. 
     - Temperature between 298 and 373 K
     - Salt concentration between 0 and 5 mol of NaCl per kg of H<sub>2O
 
