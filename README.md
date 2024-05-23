@@ -19,7 +19,7 @@ Where available, the computed thermodynamic properties are compared with the the
 - $T$ : Temperature [K]
 - $c_\mathrm{salt}$ : Salt concentration [moles of salt per kg of H<sub>2</sub>O]
 - $M_\mathrm{salt}$ : Salt concentration [moles of salt per L of H<sub>2</sub>O]
-- $\sigma_{A}$ : Statistical uncertainty in the computation of the thermodynamic property $A$ with the unit same as $a$
+- $\sigma_{A}$ : Statistical uncertainty in the computation of the thermodynamic property $A$ in units same as $A$
 - $\rho$ : Density [kg/m<sup>3</sup>]
 - $Z$ : Compressibility []
 - $\Gamma$ : Thermodynamic Factor []
@@ -33,6 +33,7 @@ Where available, the computed thermodynamic properties are compared with the the
 - $x_{i}$ : Solubility of specie $i$ in liquid phase expressed as a mole fraction []
 - $y_{i}$ : Solubility of specie $i$ in gas phase expressed as a mole fraction []
 - $\phi_{i}$ : Fugacity coefficient of specie $i$ []
+- $\mathrm{mf}_{i}$ : Mole fraction of species $i$ in a mixture 
 
 ## Sheet Descriptions
 
@@ -56,15 +57,62 @@ Where available, the computed thermodynamic properties are compared with the the
 
 ### <span style="color: #4CAF50;">3. Transport properties of H<sub>2</sub>-Brine
 - **Properties**: 
-    - $\large \eta(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub>-NaCl Brine systems computed from MD simulations (Ref. [6]).
+    - $\large \eta(p,T,c_\mathrm{NaCl})$ of NaCl Brine systems computed from MD simulations (Ref. [6]).
+    - $\Large D^\mathrm{self}_\mathrm{H_2}$ in NaCl Brine systems computed from MD simulations (Ref. [6]).
 - **Range of data**: 
     - $\large p \in [0.1, 100]$
     - $\large T \in [298, 723]$ K
     - $\large c_\mathrm{NaCl} \in [0,6]$ mol of NaCl per kg of H<sub>2</sub>O
 - **Description**: Data reported are for liquid-phase mixtures.
 
+### <span style="color: #4CAF50;">4. VLE H<sub>2</sub>-Brine
+- **Properties**: 
+    - $\large \rho(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub>NaCl Brine systems computed from CFCMC simulations (Ref. [6]).
+    - $\large \mu^\mathrm{Ex}/k_{B}T(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub> in H<sub>2</sub>-Brine systems computed from CFCMC simulations (Ref. [6])
+    - $\large s_\mathrm{H_{2}} \& x_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in NaCl Brine systems computed from CFCMC simulations (Ref. [6])
+- **Range of data**: 
+    - $\large p \in [0.1, 100]$
+    - $\large T \in [298, 363]$ K
+    - $\large c_\mathrm{NaCl} \in [0,6]$ mol of NaCl per kg of H<sub>2</sub>O
+- **Description**: Data reported are for liquid-phase mixtures.
 
+### <span style="color: #4CAF50;">5. Mixture properties H<sub>2</sub>-CO<sub>2</sub> 
+- **Properties**: 
+    - $\large \rho(p,T,\mathrm{mf}_\mathrm{H_{2}})$ of H<sub>2-CO<sub>2</sub> mixtures computed from MD simulations (Ref. [6]).
+    - $\large \rho(p,T,\mathrm{mf}_\mathrm{H_{2}})$ of H<sub>2-CO<sub>2</sub> mixtures taken from REFPROP database (Ref. [9]).
+    - $\large \Gamma(p,T,\mathrm{mf}_\mathrm{H_{2}})$ of H<sub>2-CO<sub>2</sub> mixtures computed from REFPROP database (Ref. [9]).
+    - $\large Z(p,T,\mathrm{mf}_\mathrm{H_{2}})$ of H<sub>2-CO<sub>2</sub> mixtures taken from MD simulations (Ref. [8]).
+    - $\large Z(p,T,\mathrm{mf}_\mathrm{H_{2}})$ of H<sub>2-CO<sub>2</sub> mixtures taken from REFPROP database (Ref. [9]).
+- **Range of data**: 
+    - $\large p \in [5, 50]$ MPa
+    - $\large T \in [323.15, 423.15]$ K
+    - $\large \mathrm{mf}_\mathrm{H_{2}} \in [0,1]$ 
+- **Description**: Values of $\Gamma$ are computed from the Gibbs free energies taken from the REFPROP database (Ref. [9]).
 
+### <span style="color: #4CAF50;">5. Transport properties H<sub>2</sub>-CO<sub>2</sub> 
+- **Properties**: 
+    - $\large \eta(p,T,\mathrm{mf}_\mathrm{H_{2}})$ of H<sub>2-CO<sub>2</sub> mixtures computed from MD simulations (Ref. [8]).
+    - $\large \eta(p,T,\mathrm{mf}_\mathrm{H_{2}})$ of H<sub>2-CO<sub>2</sub> mixtures taken from REFPROP database (Ref. [8]).
+    - $\large D^\mathrm{Self}_\mathrm{H_2}(p,T,\mathrm{mf}_\mathrm{H_{2}})$ in H<sub>2-CO<sub>2</sub> mixtures computed from MD simulations (Ref. [8]).
+    - $\large D^\mathrm{Self}_\mathrm{CO_2}(p,T,\mathrm{mf}_\mathrm{H_{2}})$ in H<sub>2-CO<sub>2</sub> mixtures computed from MD simulations (Ref. [8]).
+    - $\large D^\mathrm{MS}_\mathrm{H_2,CO_2}(p,T,\mathrm{mf}_\mathrm{H_{2}})$ computed from MD simulations (Ref. [8]).
+    - $\large D^\mathrm{Fick}_\mathrm{H_2,CO_2}(p,T,\mathrm{mf}_\mathrm{H_{2}})$ computed from MD simulations (Ref. [8]).
+- **Range of data**: 
+    - $\large p \in [5, 50]$ MPa
+    - $\large T \in [323.15, 423.15]$ K
+    - $\large \mathrm{mf}_\mathrm{H_{2}} \in [0,1]$ 
+- **Description**: 
+
+### <span style="color: #4CAF50;">6. VLE H<sub>2</sub>-CO<sub>2</sub>-Brine
+- **Properties**: 
+    - $\large x_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in NaCl Brine systems computed from CFCMC simulations (Ref. [6])
+    - $\large x_\mathrm{CO_{2}}(p,T,c_\mathrm{NaCl})$ in NaCl Brine systems computed from CFCMC simulations (Ref. [6])
+- **Range of data**: 
+    - $\large p \in [5, 50]$ MPa
+    - $\large T \in [323.15, 423.15]$ K
+    - $\large c_\mathrm{NaCl} \in [0,2]$ mol of NaCl per kg of H<sub>2</sub>O
+- **Description**: 
+    - VLE in H<sub>2</sub>-CO<sub>2</sub>-H<sub>2</sub>O mixtures is calculated for a single mixture composition of [0.25, 0.25, 0.5]
 
 ## References 
 
