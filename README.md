@@ -92,11 +92,14 @@ Where available, the computed thermodynamic properties are compared with the the
 - **Properties**: 
     - $\large \eta(p,T,\mathrm{mf}_\mathrm{H_2})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures computed from MD simulations (Ref. [8]).
     - $\large \eta(p,T,\mathrm{mf}_\mathrm{H_2})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures taken from REFPROP database (Ref. [8]).
-    - $\large D_\mathrm{H_2}^\mathrm{self}(p,T,\mathrm{mf}_\mathrm{H_2})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures taken from REFPROP database (Ref. [8]).
+    - $\large D_\mathrm{H_2}^\mathrm{self}(p,T,\mathrm{mf}_\mathrm{H_2})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures taken from MD simulations (Ref. [8]).
+    - $\large D_\mathrm{CO_2}^\mathrm{self}(p,T,\mathrm{mf}_\mathrm{H_2})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures taken from MD simulations (Ref. [8]).
+    - $\large D^\mathrm{MS}(p,T,\mathrm{mf}_\mathrm{H_2})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures taken from MD simulations (Ref. [8]).
+    - $\large D^\mathrm{Fick}(p,T,\mathrm{mf}_\mathrm{H_2})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures taken from MD simulations (Ref. [8]).
 - **Range of data**: 
     - $\large p \in [5, 50]$ MPa
     - $\large T \in [323.15, 423.15]$ K
-    - $\large \mathrm{mf}_\mathrm{H_{2}} \in [0,1]$ 
+    - $\large \mathrm{mf}_\mathrm{H_2} \in [0,1]$ 
 - **Description**: 
 
 ### <span style="color: #4CAF50;">6. VLE H<sub>2</sub>-CO<sub>2</sub>-Brine
@@ -114,13 +117,13 @@ Where available, the computed thermodynamic properties are compared with the the
 
 - [1] A. P. Thompson, H. M. Aktulga, R. Berger, D. S. Bolintineanu, W. M. Brown, P. S. Crozier, P. J. in 't Veld, A. Kohlmeyer, S. G. Moore, T. D. Nguyen, R. Shan, M. J. Stevens, J. Tranchida, C. Trott, S. J. Plimpton, "LAMMPS - a flexible simulation tool for particle-based materials modeling at the atomic, meso, and continuum scales," _Computer Physics Communications_, 271 (2022) 10817. 
 - [2] Seyed Hossein Jamali, Ludger Wolff, Tim M. Becker, Mariëtte de Groen, Mahinder Ramdin, Remco Hartkamp, André Bardow, Thijs J. H. Vlugt, and Othonas A. Moultos, "OCTP: A Tool for On-the-Fly Calculation of Transport Properties of Fluids with the Order-n Algorithm in LAMMPS," _Journal of Chemical Information and Modeling_, 2019, 59 (4), 1290-1294. DOI: [10.1021/acs.jcim.8b00939](https://doi.org/10.1021/acs.jcim.8b00939)
-- [3] Remco Hens, Ahmadreza Rahbari, Sebastián Caro-Ortiz, Noura Dawass, Máté Erdős, Ali Poursaeidesfahani, Hirad S. Salehi, Alper T. Celebi, Mahinder Ramdin, Othonas A. Moultos, David Dubbelda m, and Thijs J. H. Vlugt, "Brick-CFCMC: Open Source Software for Monte Carlo Simulations of Phase and Reaction Equilibria Using the Continuous Fractional Component Method," _Journal of Chemical Information and Modeling_, 2020, 60 (6), 2678-2682. DOI: [10.1021/acs.jcim.0c00334](https://doi.org/10.1021/acs.jcim.0c00334)
+- [3] Remco Hens, Ahmadreza Rahbari, Sebastián Caro-Ortiz, Noura Dawass, Máté Erdős, Ali Poursaeidesfahani, Hirad S. Salehi, Alper T. Celebi, Mahinder Ramdin, Othonas A. Moultos, David Dubbeldam, and Thijs J. H. Vlugt, "Brick-CFCMC: Open Source Software for Monte Carlo Simulations of Phase and Reaction Equilibria Using the Continuous Fractional Component Method," _Journal of Chemical Information and Modeling_, 2020, 60 (6), 2678-2682. DOI: [10.1021/acs.jcim.0c00334](https://doi.org/10.1021/acs.jcim.0c00334)
 - [4] H. Mert Polat, Hirad S. Salehi, Remco Hens, Dominika O. Wasik, Ahmadreza Rahbari, Frédérick de Meyer, Céline Houriez, Christophe Coquelet, Sofia Calero, David Dubbeldam, Othonas A. Moultos, and Thijs J. H. Vlugt, "New Features of the Open Source Monte Carlo Software Brick-CFCMC: Thermodynamic Integration and Hybrid Trial Moves," _Journal of Chemical Information and Modeling_, 2021, 61 (8), 3752-3757. DOI: [10.1021/acs.jcim.1c00652](https://doi.org/10.1021/acs.jcim.1c00652)
 - [5] Rahbari, A., Hens, R., Ramdin, M., Moultos, O. A., Dubbeldam, D., & Vlugt, T. J. H. (2021). "Recent advances in the continuous fractional component Monte Carlo methodology," _Molecular Simulation_, 47(10–11), 804–823. DOI: [10.1080/08927022.2020.1828585](https://doi.org/10.1080/08927022.2020.1828585)
-- [6] W. A. van Rooijen, P. Habibi, K. Xu, P. Dey, T. J. H. Vlugt, H. Hajibeygi, and O. A. Moultos, "Interfacial Tensions, Solubilities, and Transport Properties of the H2/H2O/NaCl System: A Molecular Simulation Study," *Journal of Chemical & Engineering Data*, 2024, 69 (2), 307-319. DOI: [10.1021/acs.jced.2c00707](https://doi.org/10.1021/acs.jced.2c00707)
+- [6] W. A. van Rooijen, P. Habibi, K. Xu, P. Dey, T. J. H. Vlugt, H. Hajibeygi, and O. A. Moultos, "Interfacial Tensions, Solubilities, and Transport Properties of the H2/H2O/NaCl System: A Molecular Simulation Study," _Journal of Chemical & Engineering Data_, 2024, 69 (2), 307-319. DOI: [10.1021/acs.jced.2c00707](https://doi.org/10.1021/acs.jced.2c00707)
 - [7] Thejas Hulikal Chakrapani, Hadi Hajibeygi, Othonas A. Moultos, and Thijs J. H. Vlugt, "Calculating Thermodynamic Factors for Diffusion Using the Continuous Fractional Component Monte Carlo Method," _Journal of Chemical Theory and Computation_, 2024, 20 (1), 333-347. DOI: [10.1021/acs.jctc.3c01144](https://doi.org/10.1021/acs.jctc.3c01144)
-- [8] Lemmon, E. W.; Bell, I. H.; Huber, M. L.; McLinden, M. O. "NIST Standard Reference Database 23: Reference Fluid Thermodynamic and Transport Properties-REFPROP, Version 10.0," National Institute of Standards and Technology, 2018. [https://www.nist.gov/srd/refprop](https://www.nist.gov/srd/refprop).
-
+- [8] Thejas Hulikal Chakrapani, Hadi Hajibeygi, O. A. Moultos, and Thijs. J. H. Vlugt, "Mutual diffusivities of mixtures of carbon dioxide and hydrogen and their solubilities in brine: Insight from molecular simulations," Accepted for Publication in _Industrial & Engineering Chemistry Research_, 2024 
+- [9] Lemmon, E. W., Bell, I. H., Huber, M. L., McLinden, M. O. "NIST Standard Reference Database 23: Reference Fluid Thermodynamic and Transport Properties-REFPROP, Version 10.0," National Institute of Standards and Technology, 2018. [https://www.nist.gov/srd/refprop](https://www.nist.gov/srd/refprop).
 
 ## Python Script for Data Extraction
 
