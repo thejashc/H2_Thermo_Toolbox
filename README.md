@@ -92,10 +92,10 @@ Where available, the computed thermodynamic properties are compared with the the
 - **Properties**: 
     - $\large \eta(p,T,\mathrm{mf}_\mathrm{H_2})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures computed from MD simulations (Ref. [8]).
     - $\large \eta(p,T,\mathrm{mf}_\mathrm{H_2})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures taken from REFPROP database (Ref. [8]).
-    - $\large D^\mathrm{Self}_\mathrm{H_2}(p,T,\mathrm{mf}_\mathrm{H_2})$ in H<sub>2</sub>-CO<sub>2</sub> mixtures computed from MD simulations (Ref. [8]).
-    - $\large D^\mathrm{Self}_\mathrm{CO_2}(p,T,\mathrm{mf}_\mathrm{H_2})$ in H<sub>2</sub>-CO<sub>2</sub> mixtures computed from MD simulations (Ref. [8]).
-    - $\large D^\mathrm{MS}_\mathrm{H_2,CO_2}(p,T,\mathrm{mf}_\mathrm{H_2})$ computed from MD simulations (Ref. [8]).
-    - $\large D^\mathrm{Fick}_\mathrm{H_2,CO_2}(p,T,\mathrm{mf}_\mathrm{H_2})$ computed from MD simulations (Ref. [8]).
+    - $\large D^\mathrm{Self}_\mathrm{H_2}(p,T,\mathrm{mf}_\mathrm{H_{2}})$ in H<sub>2</sub>-CO<sub>2</sub> mixtures computed from MD simulations (Ref. [8]).
+    - $\large D^\mathrm{Self}_\mathrm{CO_2}(p,T,\mathrm{mf}_\mathrm{H_{2}})$ in H<sub>2</sub>-CO<sub>2</sub> mixtures computed from MD simulations (Ref. [8]).
+    - $\large D^\mathrm{MS}_\mathrm{H_2,CO_2}(p,T,\mathrm{mf}_\mathrm{H_{2}})$ computed from MD simulations (Ref. [8]).
+    - $\large D^\mathrm{Fick}_\mathrm{H_2,CO_2}(p,T,\mathrm{mf}_\mathrm{H_{2}})$ computed from MD simulations (Ref. [8]).
 - **Range of data**: 
     - $\large p \in [5, 50]$ MPa
     - $\large T \in [323.15, 423.15]$ K
