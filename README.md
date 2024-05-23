@@ -14,7 +14,7 @@
 
 ### <span style="color: #4CAF50;">1. IFT H2-Brine</span>
 - **Properties**: Interfacial Tensions (IFTs) of H2-NaCl Brine systems as functions of temperature, pressure, and NaCl salt concentration.
-- **Description**: IFTs computed from MD simulations performed in the NVT ensemble. Details are provided in Ref. [1]. 
+- **Description**: IFTs computed from MD simulations performed in the _NVT_ ensemble. Details are provided in Ref. [1]. 
 - **Reference**: 
     - [1] W. A. van Rooijen, P. Habibi, K. Xu, P. Dey, T. J. H. Vlugt, H. Hajibeygi, and O. A. Moultos, "Interfacial Tensions, Solubilities, and Transport Properties of the H2/H2O/NaCl System: A Molecular Simulation Study," *Journal of Chemical & Engineering Data*, 2024, 69 (2), 307-319. DOI: [10.1021/acs.jced.2c00707](https://doi.org/10.1021/acs.jced.2c00707) 
 
