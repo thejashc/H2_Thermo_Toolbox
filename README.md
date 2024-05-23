@@ -7,10 +7,10 @@ Where available, the computed thermodynamic properties are compared with the the
 
 ## Table of Contents
 
+1. [Notations and Units](#Notations-and-Units)
 1. [Sheet Descriptions](#sheet-descriptions)
-2. [Notations and Units](#Notations-and-Units)
-3. [Python Script for Data Extraction](#python-script-for-data-extraction)
-4. [References](#references)
+3. [References](#references)
+4. [Python Script for Data Extraction](#python-script-for-data-extraction)
 5. [Usage Instructions](#usage-instructions)
 
 ## Notations and Units
@@ -122,7 +122,8 @@ Where available, the computed thermodynamic properties are compared with the the
     - $\large c_\mathrm{NaCl} \in [0,2]$ mol of NaCl per kg of H<sub>2</sub>O
 - **Description**: 
     - VLE in H<sub>2</sub>-CO<sub>2</sub>-H<sub>2</sub>O mixtures is calculated for a single mixture composition of [0.25, 0.25, 0.5]
-    - VLE for binary mixtures of H<sub>2</sub>-H<sub>2</sub>O and CO<sub>2</sub>-H<sub>2</sub>O mixtures are also tabulated in the excel sheet
+    - VLE for binary mixtures of H<sub>2</sub>-H<sub>2</sub>O and CO<sub>2</sub>-H<sub>2</sub>O mixtures are also tabulated in the excel sheet.
+    - The VLE of H<sub>2</sub>-H<sub>2</sub>O binary mixtures differs from Sheet 4 due to a different force field for H<sub>2</sub>O, as detailed in Refs. [6] and [8].
     - The liquid phase is predominantly NaCl brine.
     - The gas phase consists mainly of H<sub>2</sub>, CO<sub>2</sub>, or a mixture of H<sub>2</sub> and CO<sub>2</sub>.
       
