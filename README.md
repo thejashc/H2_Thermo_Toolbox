@@ -37,12 +37,11 @@ Where available, the computed thermodynamic properties are compared with the the
 ## Sheet Descriptions
 
 ### <span style="color: #4CAF50;">1. IFT H<sub>2</sub>-Brine</span>
-- **Properties**: Interfacial Tensions (IFTs) of H<sub>2</sub>-NaCl Brine systems computed from MD simulations performed in _NVT_ ensemble, 
-                as a function of pressure ($p$), temperature ($T$), and concentration of NaCl (Ref. [6]).
+- **Properties**: $\gamma(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub>-NaCl Brine systems computed from MD simulations performed in _NVT_ ensemble (Ref. [6]).
 - **Range of data**: 
-    - $p \in [0.1, 60]$ MPa. 
-    - Temperature between 298 and 373 K
-    - Salt concentration between 0 and 5 mol of NaCl per kg of H<sub>2O
+    - $p \in [0.1, 60]$ MPa
+    - $T \in [298, 373]$ K
+    - $c_\mathrm{NaCl} \in [0,5]$ mol of NaCl per kg of H<sub>2O
 
 ### <span style="color: #4CAF50;">1. H2 Self-Diffusion in H2O</span>
 - **Properties**: Self-diffusion coefficients as a function of temperature and pressure.
