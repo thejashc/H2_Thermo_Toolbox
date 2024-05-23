@@ -37,15 +37,17 @@ Where available, the computed thermodynamic properties are compared with the the
 ## Sheet Descriptions
 
 ### <span style="color: #4CAF50;">1. IFT H<sub>2</sub>-Brine</span>
-- **Properties**: $\large \gamma(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub>-NaCl Brine systems computed from MD simulations (Ref. [6]).
+- **Properties**: 
+    - $\large \gamma(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub>-NaCl Brine systems computed from MD simulations (Ref. [6]).
 - **Range of data**: 
     - $\large p \in [0.1, 60]$
     - $\large T \in [298, 373]$ K
     - $\large c_\mathrm{NaCl} \in [0,5]$ mol of NaCl per kg of H<sub>2</sub>O
-- **Description**: Data reported are for multi-phase mixtures containing H<sub>2</sub> in the gas phase and H<sub>2</sub>O in the liquid phase.
+- **Description**: Mixtures considered here contain gaseous and liquid phases dominated by H<sub>2</sub> and H<sub>2</sub>O, respectively.
 
 ### <span style="color: #4CAF50;">2. Mixture properties H<sub>2</sub>-Brine
-- **Properties**: $\large \rho(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub>-NaCl Brine systems computed from MD simulations (Ref. [6]).
+- **Properties**: 
+    - $\large \rho(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub>-NaCl Brine systems computed from MD simulations (Ref. [6]).
 - **Range of data**: 
     - $\large p \in [0.1, 100]$
     - $\large T \in [298, 723]$ K
