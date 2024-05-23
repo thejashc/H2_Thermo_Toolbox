@@ -32,7 +32,7 @@ Where available, the computed thermodynamic properties are compared with the the
 - $s_{i}$ : Solubility of specie $i$ in the liquid phase [moles per gas per kg of H<sub>2</sub>O]
 - $x_{i}$ : Solubility of specie $i$ in liquid phase expressed as a mole fraction []
 - $y_{i}$ : Solubility of specie $i$ in gas phase expressed as a mole fraction []
-- $\phi_{i}$ : Fugacity coefficient of specie $i$ []
+- $\phi_{i}$ : Fugacity coefficient of species $i$ [] in the gas-phase 
 - $\mathrm{mf}_{i}$ : Mole fraction of species $i$ in a mixture 
 
 ## Sheet Descriptions
@@ -104,15 +104,24 @@ Where available, the computed thermodynamic properties are compared with the the
 
 ### <span style="color: #4CAF50;">6. VLE H<sub>2</sub>-CO<sub>2</sub>-Brine
 - **Properties**: 
-    - $\large x_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in NaCl Brine systems computed from CFCMC simulations (Ref. [6])
-    - $\large x_\mathrm{CO_{2}}(p,T,c_\mathrm{NaCl})$ in NaCl Brine systems computed from CFCMC simulations (Ref. [6])
+    - $\large x_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in liquid phase computed from CFCMC simulations (Ref. [8])
+    - $\large x_\mathrm{CO_{2}}(p,T,c_\mathrm{NaCl})$ in liquid phase computed from CFCMC simulations (Ref. [8])
+    - $\large x_\mathrm{H_{2}O}(p,T,c_\mathrm{NaCl})$ in liquid phase computed from CFCMC simulations (Ref. [8])
+    - $\large y_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
+    - $\large y_\mathrm{CO_{2}}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
+    - $\large y_\mathrm{H_{2}O}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
+    - $\large \phi_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
+    - $\large \phi_\mathrm{CO_{2}}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
+    - $\large \phi_\mathrm{H_{2}O}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
 - **Range of data**: 
     - $\large p \in [5, 50]$ MPa
     - $\large T \in [323.15, 423.15]$ K
     - $\large c_\mathrm{NaCl} \in [0,2]$ mol of NaCl per kg of H<sub>2</sub>O
 - **Description**: 
     - VLE in H<sub>2</sub>-CO<sub>2</sub>-H<sub>2</sub>O mixtures is calculated for a single mixture composition of [0.25, 0.25, 0.5]
-
+    - The liquid phase is predominantly NaCl brine.
+    - The gas phase consists mainly of H<sub>2</sub>, CO<sub>2</sub>, or a mixture of H<sub>2</sub> and CO<sub>2</sub>.
+      
 ## References 
 
 - [1] A. P. Thompson, H. M. Aktulga, R. Berger, D. S. Bolintineanu, W. M. Brown, P. S. Crozier, P. J. in 't Veld, A. Kohlmeyer, S. G. Moore, T. D. Nguyen, R. Shan, M. J. Stevens, J. Tranchida, C. Trott, S. J. Plimpton, "LAMMPS - a flexible simulation tool for particle-based materials modeling at the atomic, meso, and continuum scales," _Computer Physics Communications_, 271 (2022) 10817. 
