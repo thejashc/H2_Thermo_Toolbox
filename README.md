@@ -8,15 +8,23 @@ Where available, the computed thermodynamic properties are compared with the the
 ## Table of Contents
 
 1. [Sheet Descriptions](#sheet-descriptions)
-2. [Python Script for Data Extraction](#python-script-for-data-extraction)
-3. [References](#references)
-4. [Usage Instructions](#usage-instructions)
+2. [Notations and Units](#Notations and Units)
+3. [Python Script for Data Extraction](#python-script-for-data-extraction)
+4. [References](#references)
+5. [Usage Instructions](#usage-instructions)
+
+## Notations and Units
+
+- Pressure - $p$ in MPa
+- Temperature - $T$ in K
+- Salt concentration - $c_\mathrm{salt}$ in moles of salt per kg of H<sub>2</sub>O
+- Interfacial Tension - $\gamma$ in mN/m
 
 ## Sheet Descriptions
 
 ### <span style="color: #4CAF50;">1. IFT H<sub>2</sub>-Brine</span>
 - **Properties**: Interfacial Tensions (IFTs) of H<sub>2</sub>-NaCl Brine systems computed from MD simulations performed in _NVT_ ensemble, 
-                as a function of pressure, temperature, and concentration of NaCl (Ref. [6]).
+                as a function of pressure ($p$), temperature ($T$), and concentration of NaCl (Ref. [6]).
 - **Range of data**: 
     - $p \in [0.1, 60]$ MPa. 
     - Temperature between 298 and 373 K
