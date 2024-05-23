@@ -79,10 +79,6 @@ Where available, the computed thermodynamic properties are compared with the the
 ### <span style="color: #4CAF50;">5. Mixture properties H<sub>2</sub>-CO<sub>2</sub> 
 - **Properties**: 
     - $\large \rho(p,T,\mathrm{mf}_\mathrm{H_{2}})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures computed from MD simulations (Ref. [6]).
-#    - $\large \rho(p,T,\mathrm{mf}_\mathrm{H_{2}})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures taken from REFPROP database (Ref. [9]).
-#    - $\large \Gamma(p,T,\mathrm{mf}_\mathrm{H_{2}})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures computed from REFPROP database (Ref. [9]).
-#    - $\large Z(p,T,\mathrm{mf}_\mathrm{H_{2}})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures taken from MD simulations (Ref. [8]).
-#    - $\large Z(p,T,\mathrm{mf}_\mathrm{H_{2}})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures taken from REFPROP database (Ref. [9]).
 - **Range of data**: 
     - $\large p \in [5, 50]$ MPa
     - $\large T \in [323.15, 423.15]$ K
@@ -91,12 +87,6 @@ Where available, the computed thermodynamic properties are compared with the the
 
 ### <span style="color: #4CAF50;">5. Transport properties H<sub>2</sub>-CO<sub>2</sub> 
 - **Properties**: 
-    - $\large \eta(p,T,\mathrm{mf}_\mathrm{H_{2}})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures computed from MD simulations (Ref. [8]).
-    - $\large \eta(p,T,\mathrm{mf}_\mathrm{H_{2}})$ of H<sub>2</sub>-CO<sub>2</sub> mixtures taken from REFPROP database (Ref. [8]).
-    - $\large D^\mathrm{Self}_\mathrm{H_2}(p,T,\mathrm{mf}_\mathrm{H_{2}})$ in H<sub>2</sub>-CO<sub>2</sub> mixtures computed from MD simulations (Ref. [8]).
-    - $\large D^\mathrm{Self}_\mathrm{CO_2}(p,T,\mathrm{mf}_\mathrm{H_{2}})$ in H<sub>2</sub>-CO<sub>2</sub> mixtures computed from MD simulations (Ref. [8]).
-    - $\large D^\mathrm{MS}_\mathrm{H_2,CO_2}(p,T,\mathrm{mf}_\mathrm{H_{2}})$ computed from MD simulations (Ref. [8]).
-    - $\large D^\mathrm{Fick}_\mathrm{H_2,CO_2}(p,T,\mathrm{mf}_\mathrm{H_{2}})$ computed from MD simulations (Ref. [8]).
 - **Range of data**: 
     - $\large p \in [5, 50]$ MPa
     - $\large T \in [323.15, 423.15]$ K
