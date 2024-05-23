@@ -15,7 +15,7 @@ Where available, the computed thermodynamic properties are compared with the the
 
 ## Notations and Units
 
-- Pressure [$p$] in MPa
+- Pressure ($p$) in MPa
 - Temperature [$T$] in K
 - Salt concentration [$c_\mathrm{salt}$] in moles of salt per kg of H<sub>2</sub>O
 - Salt concentration [$M_\mathrm{salt}$] in moles of salt per L of H<sub>2</sub>O
