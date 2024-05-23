@@ -11,7 +11,7 @@ Where available, the computed thermodynamic properties are compared with the the
 1. [Sheet Descriptions](#sheet-descriptions)
 3. [References](#references)
 4. [Python Script for Data Extraction](#python-script-for-data-extraction)
-5. [Usage Instructions](#usage-instructions)
+5. [Script Example](#script-example)
 
 ## Notations and Units
 
