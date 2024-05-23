@@ -26,7 +26,7 @@ Where available, the computed thermodynamic properties are compared with the the
 - Interfacial Tension ($\gamma$) in N/m
 - Viscosity ($\eta$) in mPas or $\mu$Pas
 - Self-diffusivity ($D_\mathrm{self}$) in m<sup>2</sup>/s
-- Maxwell Stefan diffusivity ($\textit{\DH}^\text{MS}$) in units 
+- Maxwell Stefan diffusivity ($D^\text{MS}$) in units 
 - Fick diffusivity ($D^\mathrm{Fick}$)
 - Excess Chemical Potential ($\frac{\mu^\mathrm{Ex}}{k_{B}T}$) in dimensionless units
 - Solubility in liquid phase ($s$) in moles per gas per kg of H<sub>2</sub>O
