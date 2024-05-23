@@ -15,10 +15,24 @@ Where available, the computed thermodynamic properties are compared with the the
 
 ## Notations and Units
 
-- Pressure - $p$ in MPa
-- Temperature - $T$ in K
-- Salt concentration - $c_\mathrm{salt}$ in moles of salt per kg of H<sub>2</sub>O
-- Interfacial Tension - $\gamma$ in mN/m
+- Pressure [$p$] in MPa
+- Temperature [$T$] in K
+- Salt concentration [$c_\mathrm{salt}$] in moles of salt per kg of H<sub>2</sub>O
+- Salt concentration [$M_\mathrm{salt}$] in moles of salt per L of H<sub>2</sub>O
+- Uncertainty in computed quantities [$\sigma$]
+- Interfacial Tension [$\gamma$] in mN/m
+- Viscosity [$\eta$] in mPas or $\mu$Pas
+- Self-diffusivity [$D_\mathrm{self}$] in m<sup>2</sup>/s
+- Density [$\rho$] in kg/m<sup>3</sup>
+- Excess Chemical Potential [$\frac{\mu^\mathrm{Ex}}{k_{B}T}$] in dimensionless units
+- Solubility in liquid phase [$s$] in moles per gas per kg of H<sub>2</sub>O
+- Solubility in liquid phase as mole fraction [$x$] in dimensionless units
+- Solubility in gas phase as mole fraction [$y$] in dimensionless units
+- Fugacity coefficient [$\phi$] in dimensionless units
+- Thermodynamic Factor [$\Gamma$] in dimensionless units
+- Compressibility [$Z$] in dimensionless units
+- Maxwell Stefan diffusivity [$\textit{\DH}^\text{MS}$]
+- Fick diffusivity [$D^\mathrm{Fick}$]
 
 ## Sheet Descriptions
 
