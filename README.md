@@ -15,24 +15,24 @@ Where available, the computed thermodynamic properties are compared with the the
 
 ## Notations and Units
 
-- Pressure ($p$) in MPa
-- Temperature ($T$) in K
-- Salt concentration ($c_\mathrm{salt}$) in moles of salt per kg of H<sub>2</sub>O
-- Salt concentration ($M_\mathrm{salt}$) in moles of salt per L of H<sub>2</sub>O
-- Uncertainty in a computed quantity ($\sigma$) in the same unit as the quantity
-- Density ($\rho$) in kg/m<sup>3</sup>
-- Compressibility ($Z$) in dimensionless units
-- Thermodynamic Factor ($\Gamma$) in dimensionless units
-- Interfacial Tension ($\gamma$) in N/m
-- Viscosity ($\eta$) in mPas or $\mu$Pas
-- Self-diffusivity ($D_\mathrm{self}$) in m<sup>2</sup>/s
-- Maxwell Stefan diffusivity ($D^\text{MS}$) in units 
-- Fick diffusivity ($D^\mathrm{Fick}$)
-- Excess Chemical Potential ($\frac{\mu^\mathrm{Ex}}{k_{B}T}$) in dimensionless units
-- Solubility in liquid phase ($s$) in moles per gas per kg of H<sub>2</sub>O
-- Solubility in liquid phase as mole fraction ($x$) in dimensionless units
-- Solubility in gas phase as mole fraction ($y$) in dimensionless units
-- Fugacity coefficient ($\phi$) in dimensionless units
+- $p$ : Pressure [MPa]
+- $T$ : Temperature [K]
+- $c_\mathrm{salt}$ : Salt concentration in moles of salt per kg of H<sub>2</sub>O
+- $M_\mathrm{salt}$ : Salt concentration in moles of salt per L of H<sub>2</sub>O
+- $\sigma_{A}$ : Statistical uncertainty in the computation of the thermodynamic property $A$ with the unit same as $a$
+- $\rho$ : Density in kg/m<sup>3</sup>
+- $Z$ : Compressibility in dimensionless units
+- $\Gamma$ : Thermodynamic Factor in dimensionless units
+- $\gamma$ : Interfacial Tension in N/m
+- $\eta$ : Viscosity in Pas 
+- $D^\mathrm{self}_{i}$ : Self-diffusivity of species $i$ in m<sup>2</sup>/s
+- $D^\text{MS}_{ij}$ : Maxwell-Stefan diffusivity for a mixture of $i$ and $j$ in units m<sup>2</sup>/s
+- $D^\mathrm{Fick}_{ij}$ : Fick diffusivity for a mixture of $i$ and $j$ in units m<sup>2</sup>/s
+- $\frac{\mu^\mathrm{Ex}_{i}}{k_{B}T}$ : Excess Chemical Potential of specie $i$ expressed in units of $k_{B}T$ where $k_{B}$ is Boltzmann constant
+- $s_{i}$ : Solubility of specie $i$ in the liquid phase in moles per gas per kg of H<sub>2</sub>O
+- $x_{i}$ : Solubility of specie $i$ in liquid phase expressed as a mole fraction 
+- $y_{i}$ : Solubility of specie $i$ in gas phase expressed as a mole fraction
+- $\phi_{i}$ : Fugacity coefficient of specie $i$ in dimensionless units
 
 ## Sheet Descriptions
 
@@ -40,7 +40,7 @@ Where available, the computed thermodynamic properties are compared with the the
 - **Properties**: 
     - $\large \gamma(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub>-NaCl Brine systems computed from MD simulations (Ref. [6]).
 - **Range of data**: 
-    - $\large p \in [0.1, 60]$
+    - $\large p \in [0.1, 60]$ MPa
     - $\large T \in [298, 373]$ K
     - $\large c_\mathrm{NaCl} \in [0,5]$ mol of NaCl per kg of H<sub>2</sub>O
 - **Description**: Mixtures considered here contain gaseous and liquid phases dominated by H<sub>2</sub> and H<sub>2</sub>O, respectively.
@@ -48,6 +48,15 @@ Where available, the computed thermodynamic properties are compared with the the
 ### <span style="color: #4CAF50;">2. Mixture properties H<sub>2</sub>-Brine
 - **Properties**: 
     - $\large \rho(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub>-NaCl Brine systems computed from MD simulations (Ref. [6]).
+- **Range of data**: 
+    - $\large p \in [0.1, 100]$
+    - $\large T \in [298, 723]$ K
+    - $\large c_\mathrm{NaCl} \in [0,6]$ mol of NaCl per kg of H<sub>2</sub>O
+- **Description**: Data reported are for liquid-phase mixtures.
+
+### <span style="color: #4CAF50;">3. Transport properties of H<sub>2</sub>-Brine
+- **Properties**: 
+    - $\large \eta(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub>-NaCl Brine systems computed from MD simulations (Ref. [6]).
 - **Range of data**: 
     - $\large p \in [0.1, 100]$
     - $\large T \in [298, 723]$ K
