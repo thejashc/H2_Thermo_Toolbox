@@ -138,42 +138,201 @@ Where available, the computed thermodynamic properties are compared with the the
 - [8] Thejas Hulikal Chakrapani, Hadi Hajibeygi, O. A. Moultos, and Thijs. J. H. Vlugt, "Mutual diffusivities of mixtures of carbon dioxide and hydrogen and their solubilities in brine: Insight from molecular simulations," Accepted for Publication in _Industrial & Engineering Chemistry Research_, 2024 
 - [9] Lemmon, E. W., Bell, I. H., Huber, M. L., McLinden, M. O. "NIST Standard Reference Database 23: Reference Fluid Thermodynamic and Transport Properties-REFPROP, Version 10.0," National Institute of Standards and Technology, 2018. [https://www.nist.gov/srd/refprop](https://www.nist.gov/srd/refprop).
 
-## Python Script for Data Extraction
-
+Python Script for Data Extraction
 <p style="font-size: 1.1em;">A Python script is available to help users extract data from this Excel file efficiently. The script allows users to:</p>
-
 <ul>
   <li>Select specific sheets and columns of interest.</li>
   <li>Filter data based on specified criteria (e.g., temperature, pressure).</li>
-  <li>Export filtered data for further analysis.</li>
+  <li>Export filtered data for further analysis in various formats.</li>
 </ul>
+How to Use the Python Script
+Setup:
 
-### How to Use the Python Script
+Ensure you have Python installed on your system.
+Install the required library pandas using the command:
+sh
+Copy code
+pip install pandas
+Running the Script:
 
-1. **Setup**:
-   - Ensure you have Python installed on your system.
-   - Install required libraries using `pip install -r requirements.txt`.
+Place the Python script (extract_data.py) in the same directory as the Excel file (databank.xlsx).
+Modify the script parameters if necessary to match your specific file and data requirements.
+Run the script using:
+sh
+Copy code
+python extract_data.py
+Interactive Workflow:
 
-2. **Running the Script**:
-   - Place the Python script (`extract_data.py`) in the same directory as the Excel file.
-   - Modify the script parameters to select the desired data.
-   - Run the script using `python extract_data.py`.
+The script will display a list of all sheet names available in the Excel file.
+You will be prompted to select a sheet by entering the corresponding number.
+The script will then display all columns in the selected sheet.
+You will be prompted to select columns by entering their corresponding numbers, separated by commas.
+The script will import and display the selected columns from the chosen sheet.
+Exporting Data:
 
-3. **Output**:
-   - The script will output the extracted data to a new file or display it as specified.
-
-### Script Example
-
-```python
+The script will prompt you to choose an export format (xlsx, csv, or dat).
+Enter a desired name for the output file (without the extension).
+The script will export the selected data to the specified format.
+Script Example
+python
+Copy code
 import pandas as pd
 
-# Load the Excel file
-file_path = 'thermodynamic_data.xlsx'
-sheet_name = 'H2 Self-Diffusion in H2O'
+def get_sheet_names(file_path):
+    """
+    Get all sheet names from the Excel file.
+    
+    :param file_path: Path to the Excel file.
+    :return: List of sheet names.
+    """
+    try:
+        excel_file = pd.ExcelFile(file_path)
+        return excel_file.sheet_names
+    except Exception as e:
+        print(f"An error occurred while fetching sheet names: {e}")
+        return []
 
-# Read the data from the specified sheet
-data = pd.read_excel(file_path, sheet_name=sheet_name)
+def get_available_columns(file_path, sheet_name):
+    """
+    Get the available columns from the specified sheet in the Excel file.
+    
+    :param file_path: Path to the Excel file.
+    :param sheet_name: Name of the sheet to read data from.
+    :return: List of column names.
+    """
+    try:
+        df = pd.read_excel(file_path, sheet_name=sheet_name, nrows=0)  # Read only the header row
+        return list(df.columns)
+    except Exception as e:
+        print(f"An error occurred while fetching columns: {e}")
+        return []
 
-# Display the first few rows of the data
-print(data.head())
+def import_selected_columns(file_path, sheet_name, columns):
+    """
+    Import selected columns from an Excel sheet.
+    
+    :param file_path: Path to the Excel file.
+    :param sheet_name: Name of the sheet to read data from.
+    :param columns: List of columns to import.
+    :return: DataFrame containing the selected columns.
+    """
+    try:
+        data = pd.read_excel(file_path, sheet_name=sheet_name, usecols=columns)
+        return data
+    except Exception as e:
+        print(f"An error occurred while importing data: {e}")
+        return None
 
+def export_data(data, file_name, file_format):
+    """
+    Export the DataFrame to the specified file format.
+    
+    :param data: DataFrame to be exported.
+    :param file_name: Name of the output file.
+    :param file_format: Format of the output file ('xlsx', 'csv', or 'dat').
+    """
+    try:
+        if file_format == 'xlsx':
+            data.to_excel(f"{file_name}.xlsx", index=False)
+        elif file_format == 'csv':
+            data.to_csv(f"{file_name}.csv", index=False)
+        elif file_format == 'dat':
+            data.to_csv(f"{file_name}.dat", index=False, sep='\t')
+        print(f"Data exported successfully to {file_name}.{file_format}")
+    except Exception as e:
+        print(f"An error occurred while exporting data: {e}")
+
+def main():
+    # Known file path
+    file_path = "databank.xlsx"  # Change this to your file path
+
+    # Get all sheet names
+    sheet_names = get_sheet_names(file_path)
+
+    if not sheet_names:
+        print("No sheets found or unable to read the file.")
+        return
+
+    # Display available sheet names
+    print("Available sheet names:")
+    for idx, sheet in enumerate(sheet_names):
+        print(f"{idx + 1}. {sheet}")
+
+    # User input for sheet name
+    while True:
+        try:
+            sheet_idx = int(input("Enter the number corresponding to the sheet name you want to use: ")) - 1
+            if sheet_idx < 0 or sheet_idx >= len(sheet_names):
+                print(f"Invalid selection. Please enter a number between 1 and {len(sheet_names)}.")
+            else:
+                break
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
+
+    sheet_name = sheet_names[sheet_idx]
+
+    # Get available columns
+    available_columns = get_available_columns(file_path, sheet_name)
+
+    if not available_columns:
+        print("No columns found or unable to read the sheet.")
+        return
+
+    print("Available columns:")
+    for idx, col in enumerate(available_columns):
+        print(f"{idx + 1}. {col}")
+
+    # User input for columns to import
+    while True:
+        try:
+            column_indices = input("Enter the numbers corresponding to the columns you want to import, separated by commas: ").split(',')
+            column_indices = [int(idx.strip()) - 1 for idx in column_indices]
+            if any(idx < 0 or idx >= len(available_columns) for idx in column_indices):
+                print(f"Invalid selection. Please enter numbers between 1 and {len(available_columns)}.")
+            else:
+                break
+        except ValueError:
+            print("Invalid input. Please enter valid numbers.")
+
+    columns = [available_columns[idx] for idx in column_indices]
+
+    # Import the selected columns
+    data = import_selected_columns(file_path, sheet_name, columns)
+
+    # Display the imported data
+    if data is not None:
+        print("Imported Data:")
+        print(data)
+    else:
+        print("Failed to import data.")
+        return
+
+    # User input for export format
+    while True:
+        export_format = input("Enter the export format (xlsx, csv, dat): ").strip().lower()
+        if export_format in ['xlsx', 'csv', 'dat']:
+            break
+        else:
+            print("Invalid format. Please enter 'xlsx', 'csv', or 'dat'.")
+
+    # User input for export file name
+    file_name = input("Enter the name for the output file (without extension): ").strip()
+
+    # Export data
+    export_data(data, file_name, export_format)
+
+if __name__ == "__main__":
+    main()
+Description of the Script
+get_sheet_names(file_path): Fetches and returns all sheet names from the specified Excel file.
+get_available_columns(file_path, sheet_name): Retrieves the available column names from a specified sheet in the Excel file.
+import_selected_columns(file_path, sheet_name, columns): Imports selected columns from a specified sheet and returns a DataFrame containing the data.
+export_data(data, file_name, file_format): Exports the given DataFrame to the specified file format (xlsx, csv, or dat).
+Example Workflow
+Run the Script: Execute the script using the command:
+sh
+Copy code
+python extract_data.py
+Select Sheet: Choose the sheet number from the list of available sheets.
+Select Columns: Choose the column numbers you wish to import.
+Export Data: Specify the export format and file name to save the extracted data.
