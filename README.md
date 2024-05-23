@@ -37,23 +37,21 @@ Where available, the computed thermodynamic properties are compared with the the
 ## Sheet Descriptions
 
 ### <span style="color: #4CAF50;">1. IFT H<sub>2</sub>-Brine</span>
-- **Properties**: $\large \gamma(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub>-NaCl Brine systems computed from MD simulations performed in _NVT_ ensemble (Ref. [6]).
+- **Properties**: $\large \gamma(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub>-NaCl Brine systems computed from MD simulations (Ref. [6]).
 - **Range of data**: 
     - $\large p \in [0.1, 60]$
     - $\large T \in [298, 373]$ K
     - $\large c_\mathrm{NaCl} \in [0,5]$ mol of NaCl per kg of H<sub>2O
 
-### <span style="color: #4CAF50;">1. H2 Self-Diffusion in H2O</span>
-- **Properties**: Self-diffusion coefficients as a function of temperature and pressure.
-- **Description**: Contains data on the infinite dilution self-diffusion coefficient of hydrogen (H2) in water (H2O).
+### <span style="color: #4CAF50;">2. Mixture properties H<sub>2</sub>-Brine
+- **Properties**: $\large \rho(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub>-NaCl Brine systems computed from MD simulations (Ref. [6]).
+- **Range of data**: 
+    - $\large p \in [0.1, 100]$
+    - $\large T \in [298, 723]$ K
+    - $\large c_\mathrm{NaCl} \in [0,6]$ mol of NaCl per kg of H<sub>2O
 
-### <span style="color: #4CAF50;">2. H2-CO2 Mix & Transport</span>
-- **Properties**: Viscosity, thermal conductivity, and diffusivity data for various temperatures and pressures.
-- **Description**: Provides mixture and transport properties of hydrogen (H2) and carbon dioxide (CO2).
 
-### <span style="color: #4CAF50;">3. [Other Sheets]</span>
-- **Properties**: [List of properties covered]
-- **Description**: [Brief description of other sheets in your file]
+
 
 ## References 
 
