@@ -8,16 +8,19 @@ Where available, the computed thermodynamic properties are compared with the the
 ## Table of Contents
 
 1. [Sheet Descriptions](#sheet-descriptions)
-2. [Data Description](#data-description)
-3. [Python Script for Data Extraction](#python-script-for-data-extraction)
-4. [References](#references)
-5. [Usage Instructions](#usage-instructions)
+2. [Python Script for Data Extraction](#python-script-for-data-extraction)
+3. [References](#references)
+4. [Usage Instructions](#usage-instructions)
 
 ## Sheet Descriptions
 
-### <span style="color: #4CAF50;">1. IFT H2-Brine</span>
-- **Properties**: Interfacial Tensions (IFTs) of H2-NaCl Brine systems as a function of temperature, pressure, and NaCl salt concentration.
-- **Description of columns**: IFTs computed from MD simulations performed in the _NVT_ ensemble. Details are provided in Ref. [1]. 
+### <span style="color: #4CAF50;">1. IFT H<sub>2-Brine</span>
+- **Properties**: Interfacial Tensions (IFTs) of H2-NaCl Brine systems computed from MD simulations performed in _NVT_ ensemble, 
+                as a function of pressure, temperature, and concentration of NaCl (Ref. [6]).
+- **Range of data**: 
+    - Pressure between 0.1 and 60 MPa
+    - Temperature between 298 and 373 K
+    - Salt concentration between 0 and 5 mol of NaCl per kg of H<sub>2O
 
 ### <span style="color: #4CAF50;">1. H2 Self-Diffusion in H2O</span>
 - **Properties**: Self-diffusion coefficients as a function of temperature and pressure.
@@ -31,17 +34,7 @@ Where available, the computed thermodynamic properties are compared with the the
 - **Properties**: [List of properties covered]
 - **Description**: [Brief description of other sheets in your file]
 
-## Data Description
-
-<p style="font-size: 1.1em;">
-- <b>Pressure (P)</b>: Measured in [units, e.g., Pascals (Pa) or atmospheres (atm)].<br>
-- <b>Temperature (T)</b>: Measured in degrees Celsius (°C) or Kelvin (K).<br>
-- <b>Salt Concentration</b>: Measured in [units, e.g., molarity (M) or percentage (%)].<br>
-- <b>Mixtures</b>: Detailed data on various binary and ternary mixtures.<br>
-- <b>Comparison</b>: Comparison data with recognized thermodynamic databases such as [Name of Database].
-</p>
-
-## Refereces 
+## References 
 
 - [1] A. P. Thompson, H. M. Aktulga, R. Berger, D. S. Bolintineanu, W. M. Brown, P. S. Crozier, P. J. in 't Veld, A. Kohlmeyer, S. G. Moore, T. D. Nguyen, R. Shan, M. J. Stevens, J. Tranchida, C. Trott, S. J. Plimpton, "LAMMPS - a flexible simulation tool for particle-based materials modeling at the atomic, meso, and continuum scales," _Computer Physics Communications_, 271 (2022) 10817. 
 - [2] Seyed Hossein Jamali, Ludger Wolff, Tim M. Becker, Mariëtte de Groen, Mahinder Ramdin, Remco Hartkamp, André Bardow, Thijs J. H. Vlugt, and Othonas A. Moultos, "OCTP: A Tool for On-the-Fly Calculation of Transport Properties of Fluids with the Order-n Algorithm in LAMMPS," _Journal of Chemical Information and Modeling_, 2019, 59 (4), 1290-1294. DOI: [10.1021/acs.jcim.8b00939](https://doi.org/10.1021/acs.jcim.8b00939)
