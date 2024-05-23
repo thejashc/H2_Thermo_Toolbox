@@ -15,25 +15,25 @@ Where available, the computed thermodynamic properties are compared with the the
 
 ## Notations and Units
 
-- $p$ : Pressure [MPa]
-- $T$ : Temperature [K]
-- $c_\mathrm{salt}$ : Salt concentration [moles of salt per kg of H<sub>2</sub>O]
-- $M_\mathrm{salt}$ : Salt concentration [moles of salt per L of H<sub>2</sub>O]
-- $\sigma_{A}$ : Statistical uncertainty in the computation of the thermodynamic property $A$ in units same as $A$
-- $\rho$ : Density [kg/m<sup>3</sup>]
-- $Z$ : Compressibility []
-- $\Gamma$ : Thermodynamic Factor []
-- $\gamma$ : Interfacial Tension [N/m]
-- $\eta$ : Viscosity [Pas]
-- $D^\mathrm{self}_{i}$ : Self-diffusivity of species $i$ [m<sup>2</sup>/s]
-- $D^\text{MS}_{ij}$ : Maxwell-Stefan diffusivity of a mixture of $i$ and $j$ [m<sup>2</sup>/s]
-- $D^\mathrm{Fick}_{ij}$ : Fick diffusivity of a mixture of $i$ and $j$ [m<sup>2</sup>/s]
-- $\frac{\mu^\mathrm{Ex}}{k_{B}T}$ : Excess Chemical Potential of specie $i$ expressed in units of $k_{B}T$ where $k_{B}$ is Boltzmann constant []
-- $s_{i}$ : Solubility of specie $i$ in the liquid phase [moles per gas per kg of H<sub>2</sub>O]
-- $x_{i}$ : Solubility of specie $i$ in liquid phase expressed as a mole fraction []
-- $y_{i}$ : Solubility of specie $i$ in gas phase expressed as a mole fraction []
-- $\phi_{i}$ : Fugacity coefficient of species $i$ [] in the gas-phase 
-- $\mathrm{mf}_{i}$ : Mole fraction of species $i$ in a mixture 
+- $\large p$ : Pressure [MPa]
+- $\large T$ : Temperature [K]
+- $\large c_\mathrm{salt}$ : Salt concentration [moles of salt per kg of H<sub>2</sub>O]
+- $\large M_\mathrm{salt}$ : Salt concentration [moles of salt per L of H<sub>2</sub>O]
+- $\large \sigma_{A}$ : Statistical uncertainty in the computation of the thermodynamic property $A$ in units same as $A$
+- $\large \rho$ : Density [kg/m<sup>3</sup>]
+- $\large Z$ : Compressibility []
+- $\large \Gamma$ : Thermodynamic Factor []
+- $\large \gamma$ : Interfacial Tension [N/m]
+- $\large \eta$ : Viscosity [Pas]
+- $\large D^\mathrm{self}_{i}$ : Self-diffusivity of species $i$ [m<sup>2</sup>/s]
+- $\large D^\text{MS}_{ij}$ : Maxwell-Stefan diffusivity of a mixture of $i$ and $j$ [m<sup>2</sup>/s]
+- $\large D^\mathrm{Fick}_{ij}$ : Fick diffusivity of a mixture of $i$ and $j$ [m<sup>2</sup>/s]
+- $\large \frac{\mu^\mathrm{Ex}}{k_{B}T}$ : Excess Chemical Potential of specie $i$ expressed in units of $k_{B}T$ where $k_{B}$ is Boltzmann constant []
+- $\large s_{i}$ : Solubility of specie $i$ in the liquid phase [moles per gas per kg of H<sub>2</sub>O]
+- $\large x_{i}$ : Solubility of specie $i$ in liquid phase expressed as a mole fraction []
+- $\large y_{i}$ : Solubility of specie $i$ in gas phase expressed as a mole fraction []
+- $\large \phi_{i}$ : Fugacity coefficient of species $i$ in the gas-phase []
+- $\large \mathrm{mf}_{i}$ : Mole fraction of species $i$ in a mixture 
 
 ## Sheet Descriptions
 
@@ -104,21 +104,25 @@ Where available, the computed thermodynamic properties are compared with the the
 
 ### <span style="color: #4CAF50;">6. VLE H<sub>2</sub>-CO<sub>2</sub>-Brine
 - **Properties**: 
-    - $\normalsize x_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in liquid phase computed from CFCMC simulations (Ref. [8])
+    - $\large x_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in liquid phase computed from CFCMC simulations (Ref. [8])
     - $\large x_\mathrm{CO_{2}}(p,T,c_\mathrm{NaCl})$ in liquid phase computed from CFCMC simulations (Ref. [8])
-    - $\Large x_\mathrm{H_{2}O}(p,T,c_\mathrm{NaCl})$ in liquid phase computed from CFCMC simulations (Ref. [8])
-    - $\small y_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
+    - $\large x_\mathrm{H_{2}O}(p,T,c_\mathrm{NaCl})$ in liquid phase computed from CFCMC simulations (Ref. [8])
+    - $\large y_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
     - $\large y_\mathrm{CO_{2}}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
     - $\large y_\mathrm{H_{2}O}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
     - $\large \phi_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
     - $\large \phi_\mathrm{CO_{2}}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
     - $\large \phi_\mathrm{H_{2}O}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from CFCMC simulations (Ref. [8])
+    - $\large \phi_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from REFPROP simulations (Ref. [8])
+    - $\large \phi_\mathrm{CO_{2}}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from REFPROP simulations (Ref. [8])
+    - $\large \phi_\mathrm{H_{2}O}(p,T,c_\mathrm{NaCl})$ in gas-phase computed from REFPROP simulations (Ref. [8])
 - **Range of data**: 
     - $\large p \in [5, 50]$ MPa
     - $\large T \in [323.15, 423.15]$ K
     - $\large c_\mathrm{NaCl} \in [0,2]$ mol of NaCl per kg of H<sub>2</sub>O
 - **Description**: 
     - VLE in H<sub>2</sub>-CO<sub>2</sub>-H<sub>2</sub>O mixtures is calculated for a single mixture composition of [0.25, 0.25, 0.5]
+    - VLE for binary mixtures of H<sub>2</sub>-H<sub>2</sub>O and CO<sub>2</sub>-H<sub>2</sub>O mixtures are also tabulated in the excel sheet
     - The liquid phase is predominantly NaCl brine.
     - The gas phase consists mainly of H<sub>2</sub>, CO<sub>2</sub>, or a mixture of H<sub>2</sub> and CO<sub>2</sub>.
       
