@@ -69,7 +69,7 @@ Where available, the computed thermodynamic properties are compared with the the
 - **Properties**: 
     - $\large \rho(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub>NaCl Brine systems computed from CFCMC simulations (Ref. [6]).
     - $\large \mu^\mathrm{Ex}/k_{B}T(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub> in H<sub>2</sub>-Brine systems computed from CFCMC simulations (Ref. [6])
-    - $\large s_\mathrm{H_{2}} \& x_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in NaCl Brine systems computed from CFCMC simulations (Ref. [6])
+    - $\large s_\mathrm{H_{2}}, x_\mathrm{H_{2}}(p,T,c_\mathrm{NaCl})$ in NaCl Brine systems computed from CFCMC simulations (Ref. [6])
 - **Range of data**: 
     - $\large p \in [0.1, 100]$
     - $\large T \in [298, 363]$ K
