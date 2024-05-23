@@ -8,7 +8,7 @@ Where available, the computed thermodynamic properties are compared with the the
 ## Table of Contents
 
 1. [Sheet Descriptions](#sheet-descriptions)
-2. [Notations and Units](#Notations and Units)
+2. [Notations and Units](#Notations-and-Units)
 3. [Python Script for Data Extraction](#python-script-for-data-extraction)
 4. [References](#references)
 5. [Usage Instructions](#usage-instructions)
