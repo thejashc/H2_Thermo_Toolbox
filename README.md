@@ -14,7 +14,7 @@ Where available, the computed thermodynamic properties are compared with the the
 
 ## Sheet Descriptions
 
-### <span style="color: #4CAF50;">1. IFT H<sub>2-Brine</span>
+### <span style="color: #4CAF50;">1. IFT H(<sub>2)-Brine</span>
 - **Properties**: Interfacial Tensions (IFTs) of H2-NaCl Brine systems computed from MD simulations performed in _NVT_ ensemble, 
                 as a function of pressure, temperature, and concentration of NaCl (Ref. [6]).
 - **Range of data**: 
