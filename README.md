@@ -138,44 +138,39 @@ Where available, the computed thermodynamic properties are compared with the the
 - [8] Thejas Hulikal Chakrapani, Hadi Hajibeygi, O. A. Moultos, and Thijs. J. H. Vlugt, "Mutual diffusivities of mixtures of carbon dioxide and hydrogen and their solubilities in brine: Insight from molecular simulations," Accepted for Publication in _Industrial & Engineering Chemistry Research_, 2024 
 - [9] Lemmon, E. W., Bell, I. H., Huber, M. L., McLinden, M. O. "NIST Standard Reference Database 23: Reference Fluid Thermodynamic and Transport Properties-REFPROP, Version 10.0," National Institute of Standards and Technology, 2018. [https://www.nist.gov/srd/refprop](https://www.nist.gov/srd/refprop).
 
-Python Script for Data Extraction
+## Python Script for Data Extraction
+
 <p style="font-size: 1.1em;">A Python script is available to help users extract data from this Excel file efficiently. The script allows users to:</p>
+
 <ul>
   <li>Select specific sheets and columns of interest.</li>
   <li>Filter data based on specified criteria (e.g., temperature, pressure).</li>
-  <li>Export filtered data for further analysis in various formats.</li>
+  <li>Export filtered data for further analysis.</li>
 </ul>
-How to Use the Python Script
-Setup:
 
-Ensure you have Python installed on your system.
-Install the required library pandas using the command:
-sh
-Copy code
-pip install pandas
-Running the Script:
+### How to Use the Python Script
 
-Place the Python script (extract_data.py) in the same directory as the Excel file (databank.xlsx).
-Modify the script parameters if necessary to match your specific file and data requirements.
-Run the script using:
-sh
-Copy code
-python extract_data.py
-Interactive Workflow:
+1. **Setup**:
+   - Ensure you have Python installed on your system.
+   - Install the required library using:
+     ```sh
+     pip install pandas
+     ```
 
-The script will display a list of all sheet names available in the Excel file.
-You will be prompted to select a sheet by entering the corresponding number.
-The script will then display all columns in the selected sheet.
-You will be prompted to select columns by entering their corresponding numbers, separated by commas.
-The script will import and display the selected columns from the chosen sheet.
-Exporting Data:
+2. **Running the Script**:
+   - Place the Python script (`extract_data.py`) in the same directory as the Excel file (`databank.xlsx`).
+   - Modify the script parameters if necessary to match your specific file and data requirements.
+   - Run the script using:
+     ```sh
+     python extract_data.py
+     ```
 
-The script will prompt you to choose an export format (xlsx, csv, or dat).
-Enter a desired name for the output file (without the extension).
-The script will export the selected data to the specified format.
-Script Example
-python
-Copy code
+3. **Output**:
+   - The script will prompt you to select sheets and columns and then output the extracted data to a new file or display it as specified.
+
+### Script Example
+
+```python
 import pandas as pd
 
 def get_sheet_names(file_path):
@@ -323,16 +318,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-Description of the Script
-get_sheet_names(file_path): Fetches and returns all sheet names from the specified Excel file.
-get_available_columns(file_path, sheet_name): Retrieves the available column names from a specified sheet in the Excel file.
-import_selected_columns(file_path, sheet_name, columns): Imports selected columns from a specified sheet and returns a DataFrame containing the data.
-export_data(data, file_name, file_format): Exports the given DataFrame to the specified file format (xlsx, csv, or dat).
-Example Workflow
-Run the Script: Execute the script using the command:
-sh
-Copy code
-python extract_data.py
-Select Sheet: Choose the sheet number from the list of available sheets.
-Select Columns: Choose the column numbers you wish to import.
-Export Data: Specify the export format and file name to save the extracted data.
