@@ -39,8 +39,8 @@ Where available, the computed thermodynamic properties are compared with the the
 ### <span style="color: #4CAF50;">1. IFT H<sub>2</sub>-Brine</span>
 - **Properties**: $\gamma(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub>-NaCl Brine systems computed from MD simulations performed in _NVT_ ensemble (Ref. [6]).
 - **Range of data**: 
-    - <span style="font-size: 150%;">\( p \in [0.1, 60] \)</span>
-    - $T \in [298, 373]$ K
+    - $\large p \in [0.1, 60]$
+    - $\Large T \in [298, 373]$ K
     - $c_\mathrm{NaCl} \in [0,5]$ mol of NaCl per kg of H<sub>2O
 
 ### <span style="color: #4CAF50;">1. H2 Self-Diffusion in H2O</span>
