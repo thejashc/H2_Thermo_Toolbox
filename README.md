@@ -1,6 +1,6 @@
 # Thermodynamic Data Excel File
 
-<p style="font-size: 1.2em;">The Excel file databank contains various thermodynamic data relevant for subsurface hydrogen storage. 
+<p style="font-size: 1.2em;">The Excel file dataBank.xlsx contains various thermodynamic data relevant for subsurface hydrogen storage. 
 These thermodynamic data are computed from Molecular Dynamics (MD) and Monte Carlo (MC) simulations using the open-source softwares 
 LAMMPS (Refs. [1] and [2] ) and Brick CFCMC (Refs. [4]-[6]).The applicability of the data is not restricted to subsurface hydrogen storage only. 
 Where available, the computed thermodynamic properties are compared with the thermodynamic database REFPROP (Ref. [8]).
