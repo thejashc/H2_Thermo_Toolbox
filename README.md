@@ -17,22 +17,22 @@ Where available, the computed thermodynamic properties are compared with the the
 
 - $p$ : Pressure [MPa]
 - $T$ : Temperature [K]
-- $c_\mathrm{salt}$ : Salt concentration in moles of salt per kg of H<sub>2</sub>O
-- $M_\mathrm{salt}$ : Salt concentration in moles of salt per L of H<sub>2</sub>O
+- $c_\mathrm{salt}$ : Salt concentration [moles of salt per kg of H<sub>2</sub>O]
+- $M_\mathrm{salt}$ : Salt concentration [moles of salt per L of H<sub>2</sub>O]
 - $\sigma_{A}$ : Statistical uncertainty in the computation of the thermodynamic property $A$ with the unit same as $a$
-- $\rho$ : Density in kg/m<sup>3</sup>
-- $Z$ : Compressibility in dimensionless units
-- $\Gamma$ : Thermodynamic Factor in dimensionless units
-- $\gamma$ : Interfacial Tension in N/m
-- $\eta$ : Viscosity in Pas 
-- $D^\mathrm{self}_{i}$ : Self-diffusivity of species $i$ in m<sup>2</sup>/s
-- $D^\text{MS}_{ij}$ : Maxwell-Stefan diffusivity for a mixture of $i$ and $j$ in units m<sup>2</sup>/s
-- $D^\mathrm{Fick}_{ij}$ : Fick diffusivity for a mixture of $i$ and $j$ in units m<sup>2</sup>/s
-- $\frac{\mu^\mathrm{Ex}_{i}}{k_{B}T}$ : Excess Chemical Potential of specie $i$ expressed in units of $k_{B}T$ where $k_{B}$ is Boltzmann constant
-- $s_{i}$ : Solubility of specie $i$ in the liquid phase in moles per gas per kg of H<sub>2</sub>O
-- $x_{i}$ : Solubility of specie $i$ in liquid phase expressed as a mole fraction 
-- $y_{i}$ : Solubility of specie $i$ in gas phase expressed as a mole fraction
-- $\phi_{i}$ : Fugacity coefficient of specie $i$ in dimensionless units
+- $\rho$ : Density [kg/m<sup>3</sup>]
+- $Z$ : Compressibility []
+- $\Gamma$ : Thermodynamic Factor []
+- $\gamma$ : Interfacial Tension [N/m]
+- $\eta$ : Viscosity [Pas]
+- $D^\mathrm{self}_{i}$ : Self-diffusivity of species $i$ [m<sup>2</sup>/s]
+- $D^\text{MS}_{ij}$ : Maxwell-Stefan diffusivity of a mixture of $i$ and $j$ [m<sup>2</sup>/s]
+- $D^\mathrm{Fick}_{ij}$ : Fick diffusivity of a mixture of $i$ and $j$ [m<sup>2</sup>/s]
+- $\frac{\mu^\mathrm{Ex}}{k_{B}T}$ : Excess Chemical Potential of specie $i$ expressed in units of $k_{B}T$ where $k_{B}$ is Boltzmann constant []
+- $s_{i}$ : Solubility of specie $i$ in the liquid phase [moles per gas per kg of H<sub>2</sub>O]
+- $x_{i}$ : Solubility of specie $i$ in liquid phase expressed as a mole fraction []
+- $y_{i}$ : Solubility of specie $i$ in gas phase expressed as a mole fraction []
+- $\phi_{i}$ : Fugacity coefficient of specie $i$ []
 
 ## Sheet Descriptions
 
