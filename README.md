@@ -39,7 +39,7 @@ Where available, the computed thermodynamic properties are compared with the the
 
 ### <span style="color: #4CAF50;">1. IFT H<sub>2</sub>-Brine</span>
 - **Properties**: 
-    - $\large \gamma(p,T,c_\mathrm{NaCl})$ of H<sub>2</sub>-NaCl Brine systems computed from MD simulations (Ref. [6]).
+    - [\bf{Comun D}] $\large \gamma(p,T,c_\mathrm{NaCl})$ (IFT) of H<sub>2</sub>-NaCl Brine systems computed from MD simulations (Ref. [6]).
 - **Range of data**: 
     - $\large p \in [0.1, 60]$ MPa
     - $\large T \in [298, 373]$ K
